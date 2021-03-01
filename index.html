@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>스위트홈 이미지 테스트</title>
+    <meta name="title" content="이미지 테스트">
+    <meta name="subject" content="얼굴로 보는 인공지능 이미지 테스트, 나와 닮은 주인공을 찾아보세요!">
+    <meta name="keywords"
+        content="이미지 테스트, 인물 찾기, 인공지능 이미지 테스트, AI 이미지 테스트, 나와 닮은 주인공, 주인공 찾기, 얼굴 이미지 테스트">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="https://SweetHome-image-face.site" />
+    <meta property="og:url" content="https://SweetHome-image-face.site" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="이미지 테스트" />
+    <meta property="og:description"
+    content="얼굴로 보는 인공지능 이미지 테스트, 나와 닮은 주인공을 찾아보세요! 대표 연예인 사진 데이터로 학습한 인공지능이 나의 얼굴로 주인공과 특징을 찾아드립니다. 사진 데이터는 그 어디에도 전송되지 않습니다. 인공지능이 보는 나의 이미지 테스트 한번 해보세요!"/>
+	<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60268415e690e4a7"></script>
+
+
+    </head>
+	
+<body>
+    <nav class="p-3 container navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">스위트홈 이미지 테스트</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">이미지 테스트
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="section">
+        <h1 class="title">이미지 테스트</h1>
+        <h2 class="subtitle">얼굴로 보는 인공지능 스위트홈 테스트</h2>
+        <h2 class="sr-only">나는 어떤 인물과 닮았을까? 나의 인물상 찾기를 해보세요!</h2>
+    </section>
+    <section class="blog pb-3">
+        <div class="container mt-3 blog-cover d-flex flex-row-reverse align-items-center">
+            <img src="" alt="" class="">
+            <a href="https://blog.naver.com/hyunseok5317" class="blog-link">Holy Moly의 블로그</a>
+        </div>
+    </section>
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <div class="mt-3 container file-upload">
+        <div class="image-upload-wrap">
+            <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+            <div class="drag-text">
+                <img src="image/upload.svg" class="mt-5 pt-5 upload">
+                <h3 class="mb-5 pb-5 pt-4  upload-text">얼굴 사진을 올려놓거나 눌러서 업로드하세요!</h3>
+            </div>
+        </div>
+        <div class="file-upload-content">
+            <img class="file-upload-image" id="face-image" src="#" alt="your image" />
+            <div id="loading" class="animated bounce">
+                <div class="spinner-border" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <p class="text-center">AI가 당신의 이미지을 분석중입니다.</p>
+            </div>
+            <p class="result-message"></p>
+            <div id="label-container" class="d-flex flex-column justify-content-around"></div>
+
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div class="addthis_inline_share_toolbox"></div>
+            
+
+            <div class="pt-3 image-title-wrap">
+                <button type="button p-2" onclick="window.location.reload()" class="try-again-btn">
+                    <span class="try-again-text">다른 사진으로 재시도</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container pt-3">
+
+		<div class="ad-banner">
+					<ins class="kakao_ad_area" style="display:none;" 
+ data-ad-unit    = "DAN-JFKlSsuqtFGn6A3w" 
+ data-ad-width   = "320" 
+ data-ad-height  = "100"></ins> 	
+		</div>	
+<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+			<footer class="footer pt-5 container d-flex justify-content-center">
+        <div>
+            <p>&copy; Holy Moly . All Rights Reserved. </p>
+		</div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://holymoly-2.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        
+    </div>
+    <footer class="footer pt-5 container d-flex justify-content-center">
+		
+	<script>
+	function gaReload1() {
+	gtag('event', '다른 사진으로 재시도 1차', {
+    'event_category': '다른 사진으로 재시도'
+            });
+        }
+    function gaReload2() {
+    gtag('event', '다른 사진으로 재시도 2차', {
+    'event_category': '다른 사진으로 재시도'
+            });
+            window.location.reload();
+        }
+        
+    
+    <script>
+        (function() {
+            var d = document,
+                s = d.createElement('script');
+            s.src = 'https://jocoding.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the
+        <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    $('.image-upload-wrap').hide();
+                    $('#loading').show();
+                    $('.file-upload-image').attr('src', e.target.result);
+                    $('.file-upload-content').show();
+                    $('.image-title').html(input.files[0].name);
+                };
+                reader.readAsDataURL(input.files[0]);
+                init().then(function() {
+                    console.log("hello");
+                    predict();
+                    $('#loading').hide();
+                });
+			} else {
+                removeUpload();
+            }
+        }
+
+        function removeUpload() {
+            $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+            $('.file-upload-content').hide();
+            $('.image-upload-wrap').show();
+        }
+        $('.image-upload-wrap').bind('dragover', function() {
+            $('.image-upload-wrap').addClass('image-dropping');
+        });
+        $('.image-upload-wrap').bind('dragleave', function() {
+            $('.image-upload-wrap').removeClass('image-dropping');
+        });
+    </script>
+    <script type="text/javascript">
+        const URL = "https://teachablemachine.withgoogle.com/models/-MZtvXATv/";
+        let model, webcam, labelContainer, maxPredictions;
+        async function init() {
+
+            const modelURL = URL + "model.json";
+            const metadataURL = URL + "metadata.json";			
+			model = await tmImage.load(modelURL, metadataURL);
+			
+            maxPredictions = model.getTotalClasses();
+            labelContainer = document.getElementById("label-container");
+            for (let i = 0; i < maxPredictions; i++) {
+                var element = document.createElement("div")
+                element.classList.add("d-flex");
+                labelContainer.appendChild(element);
+            }
+        }
+        async function predict() {
+            var image = document.getElementById("face-image")
+            const prediction = await model.predict(image, false);
+            prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
+            console.log(prediction[0].className);
+            var resultTitle; 
+			var resultExplain;
+                switch (prediction[0].className) {
+                    case "송강":
+                        resultTitle = "만화속 주인공"
+                        resultExplain = "하하가 항상 말하는 유니버스의 주인공! 잘생겼거나 혹은 예뻐 동성들의 질투를 받지만 정작 자기는 잘 몰라 신경을 쓰지 않는다 "
+                        break;
+                    case "이진욱":
+                        resultTitle = "츤데레"
+                        resultExplain = "여성이 말하는 나쁜남자의 표본이다!. 철저하게 계산된 행동이 아닌 부끄러움이 많아 그것을 감추기 위해 겉으로 거칠게 표현하지만 그것이 미안하여 챙겨주며 몇몇의 이성은 이에 반해 헤어나지 못한다." 
+                        break;
+                    case "김남희":
+                        resultTitle = "넌씨눈"
+                        resultExplain = "말 그대로 정말 눈치가 없다. 동기 상사 혹은 후임으로 같이 지내게 된다면 굉장히 힘이 들 수 있지만 심성이 착하며 남을 위해 헌신하는 삶이 큰 낙이다"
+                        break;
+                    case "이시영":
+                        resultTitle = "사기캐"
+                        resultExplain = "전형적인 엄친아 or 엄친딸 이라고 볼 수 있다!.외모도 엄청 예쁘다(잘생김) 그리고 운동도 잘하며 공부도 잘하여 어머니들의 입에 오르락 내리락하며 인기만점인 스타일"
+                        break;
+                    case "박규영":
+                        resultTitle = "현실주의자"
+                        resultExplain = "눈치가 굉장히 빠르며 현실적인 판단을 하는 사람! 본인의 이득이 크다면 못된 짓도 마다하지 않는 타입"
+						break;
+                    case "고윤정":
+                        resultTitle = "신사임당"
+                        resultExplain = "통찰력과 판단력이 아주 뛰어나며 아울러 교양과 학문을 갖추었기에 어느 분야에서도 최고를 찍을 사람이다! 때론 계산적이라는 평가를 받을 수 있지만 내 사람들에겐 굉장히 헌신적이다"
+						break;
+					case "이도현":
+                        resultTitle = "전교1등"
+                        resultExplain ="항상 올바른 말을 하고 수업 중 선생님에게 숙제가 있었다고 말할 스타일이며 원성을 자주 살 수 있다!.하지만, 너드미가 있어 매니아층에겐 인기가 많은 스타일이다"	
+                        break;
+                    default:
+                        resultTitle = "알수없음"
+                        resultExplain = "이건 나도 어쩔 수 없다"
+                }
+            var title = "<div class='" + prediction[0].className + "SweethomeFace-title'>" + resultTitle + "</div>"
+            var explain = "<div class='SweethomeFace-explain pt-2'>" + resultExplain + "</div>"
+            $('.result-message').html(title + explain);
+            var barWidth;
+            for (let i = 0; i < maxPredictions; i++) {
+                if (prediction[i].probability.toFixed(2) > 0.1) {
+                    barWidth = Math.round(prediction[i].probability.toFixed(2) * 100) + "%";
+                } else if (prediction[i].probability.toFixed(2) >= 0.01) {
+                    barWidth = "4%"
+                } else {
+                    barWidth = "2%"
+                }
+                var labelTitle;
+                switch (prediction[i].className) {
+                    case "송강":
+                        labelTitle = "차현수"
+                        break;
+                    case "이진욱":
+                        labelTitle = "편상욱"
+                        break;
+                    case "이시영":
+                        labelTitle = "서이경"
+                        break;
+                    case "김남희":
+                        labelTitle = "정재헌"
+                        break;
+                    case "박규영":
+                        labelTitle = "윤지수"
+                        break;
+                    case "고윤정":
+                        labelTitle = "박유리"
+                        break;
+                    case "이도헌":
+                        labelTitle = "이은혁"
+                        break;
+                    default:
+                        labelTitle = "알수없음"
+                }
+                var label = "<div class='animal-label d-flex align-items-center'>" + labelTitle + "</div>"
+                var bar = "<div class='bar-container position-relative container'><div class='" + prediction[i].className + "-box'></div><div class='d-flex justify-content-center align-items-center " + prediction[i].className + "-bar' style='width: " + barWidth + "'><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 100) + "%</span></div></div>"
+                labelContainer.childNodes[i].innerHTML = label + bar;
+            }
+        }
+    </script>
+</body>
+<!-- 
+image input box
+Copyright (c) 2020 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+gender toggle
+Copyright (c) 2020 by Mert Cukuren (https://codepen.io/knyttneve/pen/bPpEZY)
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ -->
+
+</html>
