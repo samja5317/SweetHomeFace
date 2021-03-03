@@ -431,3 +431,8 @@ input:checked + label > .knob > i:before {
     max-width: 320px;
 	margin: 0 auto;
 }
+
+.ad-banner {
+    max-width: 320px;
+	margin: 0 auto;
+}
